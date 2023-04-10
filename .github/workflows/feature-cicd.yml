@@ -9,6 +9,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: kentaro-m/task-completed-checker-action@v0.1.1
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
