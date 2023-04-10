@@ -1,5 +1,5 @@
 # JSLoader
-Dynamically load javascript files before running the controller. This loader use the jquery method $.getScript(), so you must include jQuery in the project.
+Dynamically load javascript files before running the controller. This loader use the jquery method $.getScript(), so you must include jQuery in the project..
 
 ## Usage in Controller
 ```javascript
