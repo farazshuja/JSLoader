@@ -2,18 +2,10 @@ name: Feature Branch
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14.x
-        cache: 'yarn'
-    - uses: kentaro-m/task-completed-checker-action@v0.1.1
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
